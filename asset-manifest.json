@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/AntiMiguel/Milestone/static/css/main.d182a25f.css",
+    "main.js": "/AntiMiguel/Milestone/static/js/main.84e4baf6.js",
+    "static/js/453.4bfa054d.chunk.js": "/AntiMiguel/Milestone/static/js/453.4bfa054d.chunk.js",
+    "index.html": "/AntiMiguel/Milestone/index.html",
+    "main.d182a25f.css.map": "/AntiMiguel/Milestone/static/css/main.d182a25f.css.map",
+    "main.84e4baf6.js.map": "/AntiMiguel/Milestone/static/js/main.84e4baf6.js.map",
+    "453.4bfa054d.chunk.js.map": "/AntiMiguel/Milestone/static/js/453.4bfa054d.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.d182a25f.css",
+    "static/js/main.84e4baf6.js"
+  ]
+}
