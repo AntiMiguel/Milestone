@@ -37,7 +37,6 @@
   }
 }
 
-/* Dark blue gradient background */
 .bg-dark {
   background: radial-gradient(circle at top, #0f172a, #1e293b);
   position: relative;
@@ -45,7 +44,6 @@
   overflow: hidden;
 }
 
-/* Background floating particles */
 @keyframes floatDots {
   0% { transform: translateY(0) translateX(0) scale(1); opacity: 0.3; }
   25% { transform: translateY(-15px) translateX(8px) scale(1.1); opacity: 0.6; }
@@ -68,7 +66,6 @@
   transition: transform 0.3s;
 }
 
-/* 🌌 Starfield */
 .bg-dark::before {
   content: "";
   position: absolute;
@@ -90,7 +87,6 @@
   to { background-position: -400px -400px; }
 }
 
-/* 🌈 Aurora Gradient Overlay */
 .bg-dark::after {
   content: "";
   position: absolute;
@@ -109,7 +105,6 @@
   100% { background-position: 0% 50%; }
 }
 
-/* Header */
 .header-gradient {
   background: linear-gradient(90deg, #0f172a, #1e293b, #3b82f6, #8b5cf6);
   background-size: 300% 300%;
@@ -123,7 +118,6 @@
   100% { background-position: 0% 50%; }
 }
 
-/* Techy Neon Header Icons */
 .header-icon {
   color: white;
   transition: all 0.3s ease;
@@ -135,7 +129,6 @@
   transform: scale(1.1);
 }
 
-/* Year */
 .year-circle {
   position: relative;
   width: 60px;
@@ -173,7 +166,6 @@
 }
 
 
-/* Timeline */
 .timeline-line {
   position: absolute;
   left: 50%;
@@ -199,7 +191,6 @@
   background-size: 100% 300%;
 }
 
-/* Cards */
 .card-gradient {
   background: rgba(255,255,255,0.05);
   backdrop-filter: blur(6px);
@@ -212,7 +203,6 @@
   transform: scale(1.05) rotateZ(1deg) rotateY(2deg);
 }
 
-/* Progress Bar*/
 .progress-bar-container {
   position: fixed;
   left: 4px;
@@ -235,7 +225,6 @@
   transition: height 0.2s ease;
 }
 
-/* Footer */
 .footer-gradient {
   background: linear-gradient(90deg,#3b82f6,#8b5cf6);
   color: white;
@@ -249,7 +238,6 @@
   text-shadow: 0 0 8px #3b82f6, 0 0 12px #8b5cf6;
 }
 
-/* Sidebar */
 .sidebar-toggle {
   position: fixed;
   right: 0;
@@ -315,7 +303,6 @@
   box-shadow: 0 0 14px #3b82f6cc, 0 0 20px #8b5cf6cc;
 }
 
-/* Mobile Year Bubble */
 .year-mobile {
   background: linear-gradient(90deg, #3b82f6, #8b5cf6);
   padding: 0.4rem 0.8rem;
@@ -326,7 +313,6 @@
   color: white;
 }
 
-/* Responsive */
 @media (max-width: 767px) {
   .timeline-line {
     height: 800vh !important;
@@ -352,8 +338,8 @@
     display: flex;
     justify-content: space-around;
     align-items: center;
-    position: fixed;  /* float at top */
-    top: 8px;         /* small offset */
+    position: fixed;
+    top: 8px;
     left: 50%;
     transform: translateX(-50%);
     width: 95%;
@@ -384,7 +370,6 @@
   .header-icon { font-size: 24px; }
 }
 
-/* Mobile menu wrapper */
 .mobile-menu-wrapper {
   width: 100%;
   display: flex;
@@ -392,18 +377,16 @@
   align-items: center;
 }
 
-/* Collapsible menu */
 .mobile-menu-content {
   display: flex;
   flex-direction: column;
   gap: 0.5rem;
-  max-height: 0;       /* collapsed */
+  max-height: 0;
   opacity: 0;
   overflow: hidden;
   transition: max-height 0.3s ease, opacity 0.3s ease, padding 0.3s ease;
 }
 
-/* Menu items */
 .mobile-menu-content button,
 .mobile-menu-content a {
   width: 90%;
@@ -422,14 +405,13 @@
   box-shadow: 0 0 10px #3b82f6aa, 0 0 16px #8b5cf6aa;
 }
 
-/* Open state */
 .mobile-menu-content.open {
-  max-height: 24rem; /* adjust based on number of items */
+  max-height: 24rem;
   opacity: 1;
 }
 
 @media (max-width: 767px) {
   #timeline-container {
-    padding-top: 300px; /* adjust as needed */
+    padding-top: 300px;
   }
 }

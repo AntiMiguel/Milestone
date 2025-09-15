@@ -1,4 +1,3 @@
-// src/App.js
 import React, { useEffect, useState } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
@@ -6,11 +5,11 @@ import "./App.css";
 import { Home, Info, Clock, Mail, ChevronUp } from "lucide-react";
 
 AOS.init({
-  duration: 1000,    // animation length in ms
-  once: false,       // allow multiple animations
-  mirror: true,      // animate elements when scrolling past them in reverse
-  easing: "ease-in-out", 
-  offset: 120        // trigger a bit before the element is in full view
+  duration: 1000,
+  once: false,
+  mirror: true,
+  easing: "ease-in-out",
+  offset: 120
 });
 
 const milestones = [
@@ -156,7 +155,6 @@ export default function App() {
       setScrollProgress((window.scrollY / totalHeight) * 100);
       setScrollY(window.scrollY);
 
-      // Active year detection
       let current = null;
       milestones.forEach((m) => {
         const el = document.getElementById(`year-${m.year}`);
@@ -188,22 +186,18 @@ export default function App() {
 
   return (
     <div className="bg-dark min-h-screen text-white relative">
-      {/* Background particles */}
       <div className="background-dots">
         {Array.from({ length: 80 }).map((_, i) => (
           <span key={i} style={{ top: `${Math.random()*100}%`, left: `${Math.random()*100}%`, width: `${4+Math.random()*6}px`, height: `${4+Math.random()*6}px`, animationDelay: `${Math.random()*5}s, ${Math.random()*3}s` }}/>
         ))}
       </div>
 
-      {/* Header */}
       <Header scrollY={scrollY} screen={screen} mobileMenuOpen={mobileMenuOpen} setMobileMenuOpen={setMobileMenuOpen}/>
 
-      {/* Progress bar */}
       <div className="progress-bar-container">
         <div className="progress-bar-fill" style={{ height: `${scrollProgress}%` }}/>
       </div>
 
-      {/* Sidebar */}
       <button className="sidebar-toggle" onClick={() => setSidebarOpen(!sidebarOpen)}>
         {sidebarOpen ? "➤" : "◀"}
       </button>
@@ -213,7 +207,6 @@ export default function App() {
         ))}
       </div>
 
-      {/* Timeline */}
       <div id="timeline-container" className="pt-[160px] max-w-6xl mx-auto relative z-10 mt-12">
         <div className="timeline-line" style={{ height: `${timelineHeight}px` }}/>
         <ul className="relative space-y-32">
@@ -238,13 +231,11 @@ export default function App() {
           })}
         </ul>
 
-        {/* Back to top */}
         {scrollY>200 && <div className="fixed bottom-6 right-6 z-50">
           <button onClick={()=>window.scrollTo({top:0,behavior:"smooth"})} className="w-12 h-12 rounded-full bg-gradient-to-r from-blue-500 to-purple-600 text-white shadow-lg flex items-center justify-center hover:scale-110 transition-transform"><ChevronUp size={28}/></button>
         </div>}
       </div>
 
-      {/* Footer */}
       <footer id="footer">
         <div className="max-w-6xl mx-auto mt-20 mb-6 text-center text-gray-400 relative z-10 footer-gradient rounded-xl p-4 backdrop-blur-md shadow-inner">
           <p>Created by <span className="font-semibold cursor-pointer">Miguel Antiporda,</span> <span className="font-semibold cursor-pointer">Jad Kean Mancenido</span> & <span className="font-semibold cursor-pointer">Jayson Sundiang</span></p>
