@@ -247,7 +247,7 @@ export default function App() {
       {/* Footer */}
       <footer id="footer">
         <div className="max-w-6xl mx-auto mt-20 mb-6 text-center text-gray-400 relative z-10 footer-gradient rounded-xl p-4 backdrop-blur-md shadow-inner">
-          <p>Created by <span className="font-semibold cursor-pointer">Miguel Antiporda</span> & <span className="font-semibold cursor-pointer">Jad Kean Mancenido</span></p>
+          <p>Created by <span className="font-semibold cursor-pointer">Miguel Antiporda,</span> <span className="font-semibold cursor-pointer">Jad Kean Mancenido</span> & <span className="font-semibold cursor-pointer">Jayson Sundiang</span></p>
         </div>
       </footer>
     </div>
